@@ -1,0 +1,20 @@
+* {
+  --color: orange;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.star_container {
+  display: flex;
+}
+
+.star_container:hover .star {
+  fill: var(--color);
+}
+
+.star_container:hover .star:hover ~ .star {
+  fill: initial;
+}
